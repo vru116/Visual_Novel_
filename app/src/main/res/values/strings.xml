@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Visual_Novel_</string>
+    <string name="str_game_name">Название игры</string>
+    <string name="new_game">Новая игра</string>
+    <string name="load">Загрузить</string>
+    <string name="settings">Настройки</string>
+    <string name="authors">Об авторах</string>
+    <string name="exit">Выход</string>
+    <string name="build_your_character">Соберите своего персонажа</string>
 </resources>
