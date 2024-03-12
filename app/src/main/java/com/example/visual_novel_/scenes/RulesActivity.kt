@@ -6,17 +6,16 @@ import android.os.Bundle
 import android.view.View
 import com.example.visual_novel_.R
 
-class BuildCharacterActivity : AppCompatActivity(), View.OnClickListener {
+class RulesActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_build_character)
+        setContentView(R.layout.activity_rules)
     }
 
     override fun onClick(p0: View?) {
         when (p0?.id) {
-            R.id.next -> {
-                val intent = Intent(applicationContext, Chapter2Activity::class.java)
-                startActivity(intent)
+            R.id.back_rules -> {
+                finish()
             }
         }
     }

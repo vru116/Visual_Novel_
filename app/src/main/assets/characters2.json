@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "name": "Саша Виноградов",
+    "emotion_image": [
+      {
+        "base_silence": "",
+        "base_talk" : "",
+        "angry_silence": "",
+        "angry_talk" : "",
+        "happy1_silence": "",
+        "happy1_talk" : "",
+        "happy2_silence": "",
+        "happy2_talk" : "",
+        "sad_silence": "",
+        "sad_talk" : "",
+        "surprise" : ""
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Равшан",
+    "emotion_image": [
+      {
+        "base_silence": "",
+        "base_talk" : "",
+        "angry_silence": "",
+        "angry_talk" : "",
+        "happy1_silence": "",
+        "happy1_talk" : "",
+        "happy2_silence": "",
+        "happy2_talk" : "",
+        "sad_silence": "",
+        "sad_talk" : "",
+        "surprise" : ""
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Виолетта",
+    "emotion_image": [
+      {
+        "base_silence": "",
+        "base_talk" : "",
+        "angry_silence": "",
+        "angry_talk" : "",
+        "happy1_silence": "",
+        "happy1_talk" : "",
+        "happy2_silence": "",
+        "happy2_talk" : "",
+        "sad_silence": "",
+        "sad_talk" : "",
+        "surprise" : ""
+      }
+    ]
+  }
+
+]
