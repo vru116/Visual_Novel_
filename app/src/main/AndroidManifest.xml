@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name="com.orm.SugarApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,11 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Visual_Novel_"
         tools:ignore="ExtraText"
-        tools:targetApi="31"
-        android:name="com.orm.SugarApp" >
+        tools:targetApi="31">
+        <activity
+            android:name=".scenes.Chapter1Activity"
+            android:exported="false" />
+
         <meta-data
             android:name="DATABASE"
-            android:value="scenes_1.db" />
+            android:value="scenes_qwerty4.db" />
         <meta-data
             android:name="VERSION"
             android:value="1" />
@@ -26,6 +30,7 @@
         <meta-data
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="com.example" />
+
         <activity
             android:name=".scenes.SettingsActivity"
             android:exported="false"
