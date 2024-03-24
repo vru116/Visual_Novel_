@@ -3,7 +3,6 @@ import com.orm.SugarRecord
 
 
 class Scene : SugarRecord {
-    var number: Long = 0
     var background: String = ""
     var firstCharacter: Character? = null
     var secondCharacter: Character? = null
@@ -16,8 +15,7 @@ class Scene : SugarRecord {
 
     constructor()
 
-    constructor(number: Long, background: String, firstCharacter: Character?, secondCharacter: Character?, dialogue: String?, choice1: Choice?, choice2: Choice?) {
-        this.number = number
+    constructor(background: String, firstCharacter: Character?, secondCharacter: Character?, dialogue: String?, choice1: Choice?, choice2: Choice?) {
         this.background = background
         this.firstCharacter = firstCharacter
         this.secondCharacter = secondCharacter

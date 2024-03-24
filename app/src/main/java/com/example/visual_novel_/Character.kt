@@ -13,8 +13,10 @@ class Character : SugarRecord{
 //        this.name = name
 //        this.emotion_image = emotion_image
 //    }
-    constructor(name:String, image:String){
+    constructor(name: String?, image:String){
+    if (name != null) {
         this.name = name
+    }
         this.current_image = image
     }
 //    fun ChangeEmotion(emotion: String, image: String) {
