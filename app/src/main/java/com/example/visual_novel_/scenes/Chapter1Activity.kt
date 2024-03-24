@@ -61,15 +61,15 @@ class Chapter1Activity : AppCompatActivity() {
 
         if (gender == "Мужской"){
 
-//            var phrase = ""
-//            var scene = Scene()
-//
-//            phrase = "Согласны ли Вы взять этого пацана в мужья? Клянетесь быть с ним в богатстве и бедности, на дискотеках и стрелках с другими группировками?"
-//            scene = Scene("@drawable/wedding", null, null, phrase, null, null)
-//            scene.save()
-//            currentSceneId = SugarRecord.last(Scene::class.java).id
-//            println(currentSceneId)
-//            goToNextScene()
+            var phrase = ""
+            var scene = Scene()
+
+            phrase = "Согласны ли Вы взять этого пацана в мужья? Клянетесь быть с ним в богатстве и бедности, на дискотеках и стрелках с другими группировками?"
+            scene = Scene("@drawable/wedding", null, null, phrase, null, null)
+            scene.save()
+            currentSceneId = SugarRecord.last(Scene::class.java).id
+            println(currentSceneId)
+            goToNextScene()
 //            val characterNataliaNikolaevna = Character("Наталья Николаевна", "@drawable/natalia_nikolevna_usual")
 //            phrase = "Согласна"
 //            scene = Scene("@drawable/wedding", characterNataliaNikolaevna, null, phrase, null, null)
@@ -166,52 +166,44 @@ class Chapter1Activity : AppCompatActivity() {
 //            scene = Scene("@drawable/bedroom", null, null, phrase, null, null)
 //            scene.save()
 
+            var choice1 = Choice()
+            var choice2 = Choice()
+            var next_scene1_1 = Scene()
+            var next_scene2_1 = Scene()
+
+            phrase = "Оглянувшись, я не обнаружил в толпе ни Полины, ни ее ярко-красной сумки, обычно заметной издалека."
+            next_scene1_1 = Scene("@drawable/wedding", null, null, phrase, null, null)
+
+
+            phrase = "Я направился к кабинету в одиночестве, размышляя, что же приготовил мне сегодняшний день."
+            next_scene2_1 = Scene("@drawable/wedding", null, null, phrase, null, null)
+
+            choice1 = Choice("оглянуться в поисках Полины", scene, null)
+            choice2 = Choice("Оставить одежду и продолжить путь к кабинету", scene, null)
+            choice1.next_scene1 = next_scene1_1
+            choice2.next_scene1 = next_scene2_1
+            next_scene1_1.save()
+            next_scene2_1.save()
+            choice1.save()
+            choice2.save()
+            currentSceneId += 2
+            println(currentSceneId)
+
+
+            phrase = "В раздевалке Полина смешалась с толпой одноклассников и исчезла."
+            scene = Scene("@drawable/wedding", null, null, phrase, null, null)
+            scene.save()
+
+            scene = Scene("@drawable/bedroom", null, null, null, choice1, choice2)
+            scene.save()
 
 
 
-            var phrase = ""
-            var scene = Scene()
 
 
-
-//            val phrase5_3_1 = "Оглянувшись, я не обнаружил в толпе ни Полины, ни ее ярко-красной сумки, обычно заметной издалека."
-//            val scene5_3_1 = Scene("@drawable/wedding", null, null, phrase5_3_1, null, null)
-//
-//
-//            val phrase5_3_2 = "Я направился к кабинету в одиночестве, размышляя, что же приготовил мне сегодняшний день."
-//            val scene5_3_2 = Scene("@drawable/wedding", null, null, phrase5_3_2, null, null)
-//
-//            scene5_3_1.save()
-//            scene5_3_2.save()
-//
-//            val choice5_3_1 = Choice("оглянуться в поисках Полины", scene5_3_1, null)
-//            val choice5_3_2 = Choice("Оставить одежду и продолжить путь к кабинету", scene5_3_2, null)
-//            choice5_3_1.next_scene1 = scene5_3_1
-//            choice5_3_2.next_scene1 = scene5_3_2
-//            choice5_3_1.save()
-//            choice5_3_2.save()
-//
-//
-//
-//
-//
-//            val phrase5_1 = "В раздевалке Полина смешалась с толпой одноклассников и исчезла."
-//            val scene5_1 = Scene("@drawable/wedding", null, null, phrase5_1, null, null)
-//            scene5_1.save()
-//            currentSceneId = SugarRecord.last(Scene::class.java).id
-//            println(currentSceneId)
-//            goToNextScene()
-//
-//
-//
-//
-//
-//            val scene5_2 = Scene("@drawable/bedroom", null, null, null, choice5_3_1, choice5_3_2)
-//            scene5_2.save()
-//
-//            val phrase5_4 = "В школьных коридорах витал запах мела, карандашей и сосисок в тесте из школьной столовой."
-//            val scene5_4 = Scene("@drawable/wedding", null, null, phrase5_4, null, null)
-//            scene5_4.save()
+            phrase = "В школьных коридорах витал запах мела, карандашей и сосисок в тесте из школьной столовой."
+            scene = Scene("@drawable/wedding", null, null, phrase, null, null)
+            scene.save()
 
 
 
