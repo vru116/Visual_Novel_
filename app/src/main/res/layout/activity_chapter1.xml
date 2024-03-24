@@ -40,18 +40,35 @@
                 tools:ignore="MissingConstraints" />
         </RelativeLayout>
 
-        <TextView
-            android:id="@+id/dialogueTextView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:onClick="onClick"
-            android:text="Диалог"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="360dp" />
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogueTextView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/speakerText"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Имя персонажа"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/dialogueText"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:text="Диалог"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:onClick="onClick"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/choiceView"
@@ -61,18 +78,21 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/choice1Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button" />
+                android:text="Выбор 1"
+                android:tag="1"
+                android:onClick="onChoiceButtonClick" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/choice2Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button" />
+                android:text="Выбор 2"
+                android:tag="2"
+                android:onClick="onChoiceButtonClick" />
+
         </LinearLayout>
 
 

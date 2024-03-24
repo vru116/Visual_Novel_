@@ -20,7 +20,7 @@
 
         <meta-data
             android:name="DATABASE"
-            android:value="scenes_qwerty4.db" />
+            android:value="scenes_qwerty5.db" />
         <meta-data
             android:name="VERSION"
             android:value="1" />
